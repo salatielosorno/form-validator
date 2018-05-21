@@ -1,0 +1,29 @@
+{
+  "name": "form-validator",
+  "version": "0.1.0",
+  "description": "Plugin JQuery - Form validator",
+  "main": "js/jquery-formValidator.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/salatielosorno/form-validator.git"
+  },
+  "keywords": [
+    "jquery-plugin"
+  ],
+  "author": "Salatiel Osorno",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/salatielosorno/form-validator/issues"
+  },
+  "homepage": "https://github.com/salatielosorno/form-validator#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1"
+  }
+}

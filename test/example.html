@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+	<title>Validator Form Plugin</title>
+</head>
+<body>
+	<div class="container">
+		<form id="myForm">
+			<div class="form-group">
+			    <label for="exampleInputName">Name</label>
+			    <input type="text" class="form-control" id="exampleInputName" placeholder="Name">
+			</div>
+			<div class="form-group">
+			    <label for="exampleInputEmail">Email address</label>
+			    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+			</div>
+			<div class="form-group">
+			   <label for="exampleInputPhone">Phone number</label>
+			   <input type="tel" data-allow='number' class="form-control" id="exampleInputPhone" placeholder="Phone">
+			</div>
+			<div class="form-group">
+				<label for="exampleInputFile">File input</label>
+			    <input type="file" id="exampleInputFile" class="form-control">
+			</div>
+			<button type="submit" class="btn btn-default" id="submit">Submit</button>
+			<div data-type="notification" class="alert alert-warning" style="display: none"></div>
+		</form>
+	</div>
+</body>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<!-- Validator Form Plugin -->
+<script type="text/javascript" src="../dist/jquery-formValidator.min.js"></script>
+
+<script>
+	$('#submit').on('click', function(e){
+		if(!$('#myForm').validate())
+			e.preventDefault();
+	});
+</script>
+</html>
