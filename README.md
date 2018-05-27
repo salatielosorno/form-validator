@@ -1,5 +1,5 @@
-# validatorForm
-Validator Form - an plugin of jQuery
+# FormValidator
+Form Validator - an plugin of jQuery
 
 <h4>IMPLEMENTATION</h4>
 <pre>
